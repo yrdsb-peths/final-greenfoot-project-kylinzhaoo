@@ -16,6 +16,14 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1);
+        super(700, 600, 1);
+        getBackground().setColor(Color.BLUE);
+        getBackground().fill();
+        addObject(new Player(), getWidth()/2, getHeight()/2);
+        /* fills background with the color blue
+         * adds character on screen
+         * author: kylin
+         * date: Dec 20
+         */
     }
 }
