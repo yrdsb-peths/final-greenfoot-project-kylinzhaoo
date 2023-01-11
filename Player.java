@@ -13,6 +13,9 @@ public class Player extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int speed = 3;
+    int count;
+    int animateSpeed = 5;
+    int animateImage = 0;
     public Player()
     {
         setImage(new GreenfootImage(70, 50));
@@ -27,6 +30,7 @@ public class Player extends Actor
      */ 
     public void act()
     {
+        animate();
         turnAround();
         moveAround();
         fireProjectile();
@@ -69,5 +73,17 @@ public class Player extends Actor
          * author: kylin
          * date: Dec 20
          */
+    public void animate()
+    {
+        if(count % animateSpeed == 0)
+        {
+            if(animateImage > 3){
+                animateImage = 0;
+            }
+            setImage("survivor-shoot_rifle" + animateImage + ".png");
+            animateImage++;
+            getImage().scale(80,80);
+        }
+    }
 }
 
