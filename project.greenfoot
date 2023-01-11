@@ -1,9 +1,15 @@
 #Greenfoot project file
 class.MyWorld.image=fingerprint.jpg
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 class.Zombie.image=skeleton-move_16.png
 dependency1.from=Zombie
 =======
+=======
+>>>>>>> parent of c3d0f74 (added zombie subclass)
+=======
+>>>>>>> parent of c3d0f74 (added zombie subclass)
 dependency1.from=MyWorld
 >>>>>>> parent of c3d0f74 (added zombie subclass)
 dependency1.to=Player
@@ -11,6 +17,8 @@ dependency1.type=UsesDependency
 dependency2.from=Zombie
 dependency2.to=Projectile
 dependency2.type=UsesDependency
+<<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD
 dependency3.from=MyWorld
 dependency3.to=Player
@@ -26,6 +34,10 @@ height=951
 package.numDependencies=4
 package.numTargets=4
 =======
+=======
+>>>>>>> parent of c3d0f74 (added zombie subclass)
+=======
+>>>>>>> parent of c3d0f74 (added zombie subclass)
 editor.fx.0.height=728
 editor.fx.0.width=800
 editor.fx.0.x=2224
@@ -33,6 +45,12 @@ editor.fx.0.y=154
 height=751
 package.numDependencies=2
 package.numTargets=3
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of c3d0f74 (added zombie subclass)
+=======
+>>>>>>> parent of c3d0f74 (added zombie subclass)
+=======
 >>>>>>> parent of c3d0f74 (added zombie subclass)
 project.charset=UTF-8
 publish.hasSource=false
