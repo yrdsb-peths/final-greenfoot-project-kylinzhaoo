@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.MyWorld.image=fingerprint.jpg
+class.MyWorld.image=granite-light.jpg
 class.Player.image=survivor-shoot_rifle_0.png
 class.Zombie.image=skeleton-move_16.png
 dependency1.from=MyWorld
@@ -24,7 +24,7 @@ editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
-height=1013
+height=814
 package.numDependencies=6
 package.numTargets=4
 project.charset=UTF-8
@@ -70,7 +70,7 @@ target4.width=120
 target4.x=0
 target4.y=0
 version=3.0.0
-width=1274
+width=1232
 world.lastInstantiated=MyWorld
-xPosition=1845
+xPosition=100
 yPosition=25
