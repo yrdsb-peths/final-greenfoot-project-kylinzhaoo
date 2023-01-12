@@ -14,7 +14,7 @@ public class MyWorld extends World
      * 
      */
     int count = 0;
-    int spawnSpeed = 50;
+    int spawnSpeed = 30;
     int randomSpawn;
     //Spawn speed will be faster if you lower value of spawnSpeed
     public Player mainPlayer = new Player();

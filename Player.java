@@ -13,13 +13,10 @@ public class Player extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int speed = 3;
+    int time = 0;
     public Player()
     {
-        setImage(new GreenfootImage(70, 50));
-        getImage().setColor(Color.YELLOW);
-        getImage().fillOval(0, 0, 50, 50);
-        getImage().setColor(Color.BLACK);
-        getImage().fillRect(50, 20, 70, 10);
+        getImage().scale(80,80);
     }
     /* creates yellow circle as our player
      * author: kylin
@@ -27,9 +24,11 @@ public class Player extends Actor
      */ 
     public void act()
     {
+        time++;
         turnAround();
         moveAround();
         fireProjectile();
+        youLose();
     }
     public void turnAround()
     {
@@ -63,11 +62,20 @@ public class Player extends Actor
             getWorld().addObject(projectile, getX(), getY());
             projectile.setRotation(getRotation());
         }
-    }
         /* allows character to fire projectile when mouse is pressed by player
          * creates new projectile every time the player presses their mouse
          * author: kylin
          * date: Dec 20
          */
+    }
+        
+    public void youLose()
+    {
+        if(isTouching(Zombie.class))
+        {
+            getWorld().showText("You Lose! - You lasted " + (time/60) + " seconds", getWorld().getWidth()/2, getWorld().getHeight()/2);
+            Greenfoot.stop();
+        }
+    }
 }
 
