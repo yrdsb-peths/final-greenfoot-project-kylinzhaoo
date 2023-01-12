@@ -1,6 +1,6 @@
 #Greenfoot project file
 class.MyWorld.image=fingerprint.jpg
-class.Player.image=survivor-idle_rifle_0.png
+class.Player.image=survivor-shoot_rifle_0.png
 class.Zombie.image=skeleton-move_16.png
 dependency1.from=MyWorld
 dependency1.to=Player
@@ -20,10 +20,10 @@ dependency5.type=UsesDependency
 dependency6.from=Zombie
 dependency6.to=Projectile
 dependency6.type=UsesDependency
-editor.fx.0.height=728
-editor.fx.0.width=800
-editor.fx.0.x=2207
-editor.fx.0.y=100
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=1013
 package.numDependencies=6
 package.numTargets=4
