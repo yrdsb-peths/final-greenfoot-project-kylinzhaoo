@@ -59,7 +59,7 @@ public class Player extends Actor
         if(Greenfoot.mousePressed(null))
         {
             Projectile projectile = new Projectile();
-            getWorld().addObject(projectile, getX(), getY());
+            getWorld().addObject(projectile, getX(), getY()+19);
             projectile.setRotation(getRotation());
         }
         /* allows character to fire projectile when mouse is pressed by player
