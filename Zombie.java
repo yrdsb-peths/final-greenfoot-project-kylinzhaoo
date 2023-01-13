@@ -16,10 +16,12 @@ public class Zombie extends Actor
     int animateSpeed = 5;
     //lower the animate speed for faster animation
     int count;
-    int health = 5;
+    int health = 1;
     Player player;
-    public Zombie(Player mainPlayer)
+    Counter counter;
+    public Zombie(Player mainPlayer,Counter counter)
     {
+        this.counter = counter;
         player = mainPlayer;
         setImage("skeleton-idle_16.png");
         getImage().scale(80,80);
@@ -67,10 +69,14 @@ public class Zombie extends Actor
             
         }
         if(health == 0)
+        {
+            counter.score++;
+            counter.money+=5;
             getWorld().removeObject(this);
             /* removes the objectile that hits the zombie
              * author: kylin zhao
              * date: Jan 9
              */
+        }
     } 
 }
