@@ -14,13 +14,15 @@ public class Counter extends Actor
      */
     int score;
     int money;
+    int time;
     public Counter()
     {
-        setImage(new GreenfootImage("Score: " + score + "\n Cash: " + money, 40, Color.BLACK, new Color (0,0,0,0)));
+        setImage(new GreenfootImage("Score: " + score + "\n Cash: " + money + "\n Time: " + time/60, 40, Color.BLACK, new Color (0,0,0,0)));
     }
     public void act()
     {
-        setImage(new GreenfootImage("Score: " + score + "\n Cash: " + money,40, Color.BLACK, new Color (0,0,0,0)));
+        time++;
+        setImage(new GreenfootImage("Score: " + score + "\n Cash: " + money + "\n Time: " + time/60, 40, Color.BLACK, new Color (0,0,0,0)));
 
     }
 }
