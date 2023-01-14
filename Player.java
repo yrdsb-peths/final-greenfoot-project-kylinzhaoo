@@ -122,7 +122,7 @@ public class Player extends Actor
             Projectile projectile2 = new Projectile();
             getWorld().addObject(projectile2, getX(), getY());
             projectile2.setRotation(getRotation() + 60);
-            projectile2.move(5);
+            projectile2.move(20);
             Projectile projectile3 = new Projectile();
             getWorld().addObject(projectile3, getX(), getY());
             projectile3.setRotation(getRotation());
@@ -134,7 +134,7 @@ public class Player extends Actor
             Projectile projectile21 = new Projectile();
             getWorld().addObject(projectile21, getX(), getY());
             projectile21.setRotation(getRotation() + 120);
-            projectile21.move(5);
+            projectile21.move(20);
             Projectile projectile31 = new Projectile();
             getWorld().addObject(projectile31, getX(), getY());
             projectile31.setRotation(getRotation() - 120);
