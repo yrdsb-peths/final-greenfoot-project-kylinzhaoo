@@ -17,6 +17,7 @@ public class Player extends Actor
     WeaponButton weaponButton;
     SuperPower superPower;
     int superTimer;
+    GreenfootSound gunSound = new GreenfootSound("mixkit-game-gun-shot-1662-[AudioTrimmer.com].mp3");
     public Player()
     {
         getImage().scale(80,80);
@@ -67,6 +68,7 @@ public class Player extends Actor
     public void fireProjectile()
     {
         if(Greenfoot.mousePressed(null) && weaponButton.weaponUpgrade == 1){
+            gunSound.play();
             Projectile projectile = new Projectile();
             getWorld().addObject(projectile, getX(), getY()+19);
             projectile.setRotation(getRotation());
